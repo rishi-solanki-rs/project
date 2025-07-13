@@ -22,8 +22,8 @@ app.use('/api/newsletter', newsletterRoutes);
 
 main()
 .then(async ()=>{
-    app.listen(process.env.PORT,()=>{
-        console.log("server listening at port number : "+process.env.PORT);
+    app.listen("https://project-backend-o3bh.onrender.com",()=>{
+        console.log("server listening at port number : https://project-backend-o3bh.onrender.com");
     });
 })
 .catch((err)=>{

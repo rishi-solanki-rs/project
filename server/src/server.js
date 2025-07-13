@@ -9,7 +9,7 @@ const clientRoutes = require('./routes/clientRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const newsletterRoutes = require('./routes/newsletterRoutes');
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:'http://localhost:'+process.env.PORT1,
   credentials:true
 }));
 

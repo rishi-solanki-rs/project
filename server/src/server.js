@@ -15,6 +15,7 @@ app.use(cors({
 
 app.use(express.json());
 app.use(cookieParser());
+app.use('/',projectRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/clients', clientRoutes);
 app.use('/api/contacts', contactRoutes);
